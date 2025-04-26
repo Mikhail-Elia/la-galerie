@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="twitter:image" content="img/logo.png">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: floralwhite;
+  
+}
+
+.contact-section {
+  padding: 60px 20px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  background:  white;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.info-item i {
+  color: #184677;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #184677;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #910996;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+<section data-aos="fade-up" data-aos-delay="2500" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h1>Get in Touch</h1>
+      <p class="intro">We'd love to hear from you! Whether you have a question, feedback, or just want to say hello — feel free to send we're open for any suggestion.</p>
+
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Shubra Benha University , Cairo , Egypt </span>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span>+20 127246627</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>mekhaeel.elia009@gmail.com</span>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/mekhaeel.elia"><i class="fab fa-facebook-f"></i></a>     
+        <a href="https://www.instagram.com/mikhail_elia/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-image">
+      <img src="img/logo.png" alt="Contact Us">
+    </div>
+  </div>
+</section>
+   <!-- copy right footer -->
+   <div style="height: 7VH;" class="navbar navbar-expand-lg bg-dark mt-5 text-center">
+    <p class="w-100 pt-md-1 nav-txt">Mikhail Elia 2025©</p>
+  </div>
+
+
+<!-- spinner -->
+<div id="spinner">
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+</div>
+
+
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow"); 
+    });
+    setTimeout(function(){
+        $('.loader-wrapper').css('display','none');
+        $('body').css('overflow','auto');
+        $('.navbar').css('display','flex')
+    },3000)
+    
+</script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+<script>
+    AOS.init({
+        offset: 100,
+        duration: 1500
+    });
+</script>
+</body>
+</html>
